@@ -369,11 +369,17 @@ data=[
 {"quote": " Courage doesn't always roar. Sometimes courage is the quiet voice at the end of the day saying, \"I will try again tomorrow.\" ", "by": "Mary Anne Radmacher"}
 ]
 
+var count=data.length;
+var randomItem=[]
+while(count!=0){
+randomItem.push( data[Math.floor(Math.random()*data.length)]);
+count=count-1;
+}
 
 
 let quotes=document.getElementById("quotes");
 let quotesHTMl="";
-data.forEach(function(element){
+randomItem.forEach(function(element){
 	let paper=`<div class="col col s12 m4">
             <div class="card">
                 <div class="card-content">

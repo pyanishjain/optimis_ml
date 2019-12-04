@@ -1,4 +1,4 @@
-data=
+
 data=[
 {"heading_href": "<a class=\"vw-post-box__link\" href=\"https://www.theoptimistcitizen.com/devanshi-rathi-project-checkmate/\" itemprop=\"url\" rel=\"bookmark\">\n\t\t\t\t\tAn 18 year-old\u2019s determined attempt to help underprivileged and disabled kids to topple the Checkmate of Life!\t\t\t\t</a>", "image_link": "https://www.theoptimistcitizen.com/wp-content/uploads/2018/04/17760144_1449445505078206_8564690789339817741_n-335x186.jpg"},
 {"heading_href": "<a class=\"vw-post-box__link\" href=\"https://www.theoptimistcitizen.com/arunima-sinha/\" itemprop=\"url\" rel=\"bookmark\">\n\t\t\t\t\tStory of Arunima Sinha, the girl who conquered Mount Everest with a prosthetic leg\t\t\t\t</a>", "image_link": "https://www.theoptimistcitizen.com/wp-content/uploads/2018/04/happyjoyjoy_1484915521-335x186.jpeg"},
@@ -572,9 +572,17 @@ data=[
 {"heading_href": "<a href=\"https://www.goodnewsnetwork.org/another-story-of-keanu-kindness-actor-delights-passengers-after-plane-makes-emergency-landing/\" rel=\"bookmark\" title=\"Another Story of Keanu Kindness: Actor Delights Passengers After Plane Makes Emergency Landing\">Another Story of Keanu Kindness: Actor Delights Passengers After Plane Makes Emergency Landing</a>", "image_link": "https://www.goodnewsnetwork.org/wp-content/uploads/2019/04/Keanu-Reeves-and-Amir-Blume-Twitter-324x235.jpg"}
 ,]
 
+var count=data.length;
+var randomItem=[]
+while(count!=0){
+randomItem.push( data[Math.floor(Math.random()*data.length)]);
+count=count-1;
+}
+
+
 let news=document.getElementById("news");
 let newsHTMl="";
-data.forEach(function(element){
+randomItem.forEach(function(element){
 	let paper=`<div class="col col s12 m4">
             <div class="card">
                 <div class="card-image">
