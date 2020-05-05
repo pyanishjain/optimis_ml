@@ -575,14 +575,14 @@ data=[
 var count=data.length;
 var randomItem=[]
 while(count!=0){
-randomItem.push( data[Math.floor(Math.random()*data.length)]);
+randomItem.push(data[Math.floor(Math.random()*data.length)]);
 count=count-1;
 }
 
 
 let news=document.getElementById("news");
 let newsHTMl="";
-randomItem.forEach(function(element){
+ran.forEach(function(element){
 	let paper=`<div class="col col s12 m4">
             <div class="card">
                 <div class="card-image">
