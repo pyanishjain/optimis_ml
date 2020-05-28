@@ -1,126 +1,47 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>home</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153697785-1"></script>
 <script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "5f3c37dd-d7d3-4836-9dd3-e58797ff7af2",
-    });
-  });
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-153697785-1');
 </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "5f3c37dd-d7d3-4836-9dd3-e58797ff7af2",
-    });
-  });
-</script>
-    <title></title>
-    <style type="text/css">
-    body {
-        background-repeat: no-repeat;
-        background-size: cover;
 
-    }
+<!-- Compiled and minified CSS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
 
-    .container {
-        width: auto 300;
-        margin: 0 auto;
-    }
+<link type="text/css" href="style.css">
 
-    .vw-post-box__link {
-        color: black;
-        font-weight: bold;
-        font-family: "Times New Roman";
-        font-size: 20px;
-
-    }
-
-    a {
-        color: balck;
-        font-weight: 10px;
-    }
-    </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153697785-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-153697785-1');
-</script>
-    <!-- Compiled and minified CSS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
-    
- 
 </head>
 
 <body>
     <div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper" style="background: black">
-            <ul id="" class="left">
-                <li><a href="index.html">News</a></li>
-                <li><a href="quotes.html">Quotes</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
+        <nav>
+            <div class="nav-wrapper" style="background: black">
+                <ul id="" class="left">
+                    <li><a href="">News</a></li>
+                    <li><a href="quotes.html">Quotes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <div class="container">
         <div class="row" id="news">
         </div>
     </div>
 </body>
+
 <script type="text/javascript" src="index.js"></script>
-<script type="text/javascript">
-(() => {
-    'use strict';
-    // Page is loaded
-    const objects = document.getElementsByClassName('asyncImage');
-    Array.from(objects).map((item) => {
-        // Start loading image
-
-        const img = new Image();
-        console.log(img);
-        img.src = item.dataset.src;
-        console.log(img.src);
-        // Once image is loaded replace the src of the HTML element
-        img.onload = () => {
-            item.classList.remove('asyncImage');
-            return item.nodeName === 'IMG' ?
-                item.src = item.dataset.src :
-                item.style.backgroundImage = `url(${item.dataset.src})`;
-        };
-    });
-})();
-</script>
-<style type="text/css">
-a {
-    color: black;
-    font-size: 20px;
-}
-
-nav ul a {
-    font-size: 20px;
-}
-		.card{
-        background-color: white;
-	box-shadow: 12px 12px 12px 0 rgba(0,0,0,0.25),
-	-8px -8px 12px 0 rgba(255,255,255,0.3);
-        }
-
-</style>
-</body>
 
 </html>
